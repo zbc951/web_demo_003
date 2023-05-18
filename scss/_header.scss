@@ -1,0 +1,387 @@
+header {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    //top
+    .top {
+        width: 100%;
+        height: 40px;
+        background: $header_topBG;
+
+        .center {
+            width: calc(100% - 360px);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            transition: 0.3s all;
+            margin: 0 auto;
+
+            .inputArea {
+                width: auto;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+
+                .inputBox {
+                    width: auto;
+                    height: auto;
+                    margin-right: 8px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    input {
+                        width: 154px;
+                        height: 28px;
+                        @include inputStyle_1;
+                    }
+                }
+            }
+
+            .btnBox {
+                width: auto;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                margin-right: 15px;
+
+                button {
+                    width: 80px;
+                    height: 28px;
+                    margin-right: 8px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    &:nth-of-type(1) {
+                        @include headerBtn_1;
+                    }
+                    &:nth-of-type(2) {
+                        @include headerBtn_2;
+                    }
+                    &:last-child {
+                        width: auto;
+                        height: auto;
+                        @include headerBtn_3;
+
+                        i {
+                            width: 19px;
+                            height: 19px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            .selectBox {
+                width: auto;
+                height: auto;
+                position: relative;
+
+                select {
+                    width: auto;
+                    height: 28px;
+                    @include selectStyle_1;
+                }
+
+                i {
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 10px 6px 0 6px;
+                    border-color: $select_arrowBG transparent;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 10px;
+                }
+            }
+        }
+    }
+
+    //bottom
+    .bottom {
+        width: 100%;
+        height: 60px;
+        background: $header_bottomBG;
+
+        .center {
+            width: calc(100% - 360px);
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            transition: 0.3s all;
+            margin: 0 auto;
+
+            ul {
+                width: auto;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                margin-right: 140px;
+    
+                li {
+                    width: auto;
+                    height: auto;
+                    position: relative;
+                    cursor: pointer;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        background: $headerListBtn_Border;
+                        top: 0px;
+                        right: 10px;
+                        border-radius: 50%;
+                        opacity: 0;
+                    }
+
+                    &:hover,&:active,&.active {
+
+                        &::before {
+                            animation: waterDrop 0.5s linear 0s;
+                        }
+                        
+                        div {
+                            background: $headerListBtn_BG;
+                            border-color: $headerListBtn_Border;
+                            text-shadow: none;
+                            animation: hoverJump 0.25s linear 0s;
+
+                            &::before {
+                                animation: loop 10s linear 0s infinite;
+                            }
+                        }
+                    }
+                    
+                    div {
+                        width: auto;
+                        height: 45px;
+                        @include headerListBtn;
+
+                        p {
+                            position: relative;
+                            z-index: 1;
+                        }
+                    }
+
+                    @keyframes waterDrop {
+                        0% {
+                            opacity: 1;
+                            transform: translate(0%,0%) scale(1);
+                        }
+
+                        34% {
+                            transform: translate(75%,-67%);
+                        }
+
+                        67% {
+                            transform: translate(150%,-34%);
+                        }
+
+                        100% {
+                            opacity: 1;
+                            transform: translate(200%,0%) scale(0);
+                        }
+                    }
+                }
+
+                @keyframes loop {
+                    0% {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+            
+                    100% {
+                        opacity: 1;
+                        transform: translateX(-80%);
+                    }
+                }
+            
+                @keyframes hoverJump {
+                    0% {
+                        transform: scale(1);
+                    }
+            
+                    34% {
+                        transform: scale(0.7,1.2);
+                    }
+            
+                    67% {
+                        transform: scale(1.2,0.8);
+                    }
+            
+                    90% {
+                        transform: scale(0.9,1.1);
+                    }
+            
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+
+    //underList
+    .underList {
+        width: 100%;
+        height: 0;
+        background: $header_filter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        transition: 0.3s all;
+        overflow: hidden;
+
+        &.display {
+            height: 230px;
+        }
+
+        ul {
+            width: auto;
+            height: auto;
+            display: flex;
+
+            li {
+                width: auto;
+                height: auto;
+                cursor: pointer;
+                margin-right: 70px;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                &:hover,&:active,&.active {
+
+                    .img {
+                        animation: underList 1.5s linear 0s infinite;
+                    }
+
+                    p {
+                        transform: translateY(10px) scale(1.2);
+                    }
+                }
+
+                .img {
+                    width: 142px;
+                    height: 135px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    color: $header_underList_Color;
+                    font-size: 15px;
+                    font-weight: bold;
+                    text-align: center;
+                    transition: 0.3s all;
+                }
+
+                @keyframes underList {
+                    0% {
+                        transform: scale(1) rotate(0deg);
+                    }
+
+                    10% {
+                        transform: scale(1.1) rotate(0deg);
+                    }
+
+                    17.5% {
+                        transform: scale(1.1) rotate(15deg);
+                    }
+
+                    25% {
+                        transform: scale(1.1) rotate(0deg);
+                    }
+
+                    32.5% {
+                        transform: scale(1.1) rotate(-15deg);
+                    }
+
+                    40% {
+                        transform: scale(1.1) rotate(0deg);
+                    }
+
+                    60% {
+                        transform: scale(1) rotate(0deg);
+                    }
+
+                    100% {
+                        transform: scale(1) rotate(0deg);
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1750px) {
+        
+        .bottom {
+
+            .center {
+
+                ul {
+                    margin: 0;
+
+                    li {
+
+                        div {
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1490px) {
+        
+        .bottom {
+
+            .center {
+
+                ul {
+                    margin: 0;
+
+                    li {
+
+                        div {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1240px) {
+        
+        .top {
+
+            .center {
+                width: calc(100% - 240px);
+            }
+        }
+
+        .bottom {
+
+            .center {
+                width: calc(100% - 120px);
+            }
+        }
+    }
+}

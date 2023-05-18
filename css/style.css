@@ -1,0 +1,2548 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+i {
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+main {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+label {
+  display: block;
+}
+
+header .forget_ic {
+  background: url("../images/question.png") no-repeat center;
+  background-size: contain;
+}
+
+header .bottom li div::before {
+  background: url("../images/lineBG.png");
+}
+
+header .underList .demo_1 {
+  background: url("../images/underList/demo_1.png") no-repeat center;
+  background-size: contain;
+}
+
+header .underList .demo_2 {
+  background: url("../images/underList/demo_2.png") no-repeat center;
+  background-size: contain;
+}
+
+header .underList .demo_3 {
+  background: url("../images/underList/demo_3.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .marquee_ic i {
+  background: url("../images/marquee_ic.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .gameBox .img {
+  background: url("../images/gameBox/game_BG.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .gameBox .textBox {
+  background: url("../images/gameBox/game_wordBG.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .gameBox .sport.img_1 {
+  background: url("../images/gameBox/sport/img_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .gameBox .sport.img_2 {
+  background: url("../images/gameBox/sport/img_2.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .gameBox .live.img_1 {
+  background: url("../images/gameBox/live/img_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .gameBox .live.img_2 {
+  background: url("../images/gameBox/live/img_2.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .gameBox .live.img_3,
+.mainArea .gameBox .live.img_3_2 {
+  background: url("../images/gameBox/live/img_3.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .gameBox .slot.img_1 {
+  background: url("../images/gameBox/slot/img_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .gameBox .slot.img_2 {
+  background: url("../images/gameBox/slot/img_2.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .gameBox .slot.img_3 {
+  background: url("../images/gameBox/slot/img_3.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .gameBox .fish.img_1 {
+  background: url("../images/gameBox/fish/img_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .gameBox .lottery.img_1 {
+  background: url("../images/gameBox/lottery/img_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .gameBox .lottery.img_2 {
+  background: url("../images/gameBox/lottery/img_2.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .gameBox .board.img_1 {
+  background: url("../images/gameBox/board/img_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .gameBox .board.img_2 {
+  background: url("../images/gameBox/board/img_2.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .gameBox .board.img_3 {
+  background: url("../images/gameBox/board/img_3.png") no-repeat center;
+  background-size: contain;
+}
+
+footer .top li::before {
+  background: url("../images/lineBG_2.png");
+}
+
+footer .bottom {
+  background: url("../images/footerBG.jpg") no-repeat top center;
+}
+
+aside .download .icon {
+  background: url("../images/aside/download_icon.png") no-repeat center;
+  background-size: contain;
+}
+
+aside .download .word {
+  background: url("../images/aside/download_word.png") no-repeat center;
+  background-size: contain;
+}
+
+aside .service .icon {
+  background: url("../images/aside/service_icon.png") no-repeat center;
+  background-size: contain;
+}
+
+aside .service .word {
+  background: url("../images/aside/service_word.png") no-repeat center;
+  background-size: contain;
+}
+
+aside .line .icon {
+  background: url("../images/aside/line_icon.png") no-repeat center;
+  background-size: contain;
+}
+
+aside .line .word {
+  background: url("../images/aside/line_word.png") no-repeat center;
+  background-size: contain;
+}
+
+aside .wechat .icon {
+  background: url("../images/aside/wechat_icon.png") no-repeat center;
+  background-size: contain;
+}
+
+aside .wechat .word {
+  background: url("../images/aside/wechat_word.png") no-repeat center;
+  background-size: contain;
+}
+
+.bg {
+  background: url("../images/bg.jpg") no-repeat top center;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+html body {
+  width: 100%;
+  min-width: 1000px;
+  height: 100%;
+  position: relative;
+}
+html body header {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+html body header .top {
+  width: 100%;
+  height: 40px;
+  background: #ffdf48;
+}
+html body header .top .center {
+  width: calc(100% - 360px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  margin: 0 auto;
+}
+html body header .top .center .inputArea {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+html body header .top .center .inputArea .inputBox {
+  width: auto;
+  height: auto;
+  margin-right: 8px;
+}
+html body header .top .center .inputArea .inputBox:last-child {
+  margin: 0;
+}
+html body header .top .center .inputArea .inputBox input {
+  width: 154px;
+  height: 28px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: none;
+  color: #1e0a00;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+html body header .top .center .inputArea .inputBox input::-webkit-input-placeholder {
+  color: #858585;
+}
+html body header .top .center .inputArea .inputBox input::-moz-placeholder {
+  color: #858585;
+}
+html body header .top .center .inputArea .inputBox input:-ms-input-placeholder {
+  color: #858585;
+}
+html body header .top .center .inputArea .inputBox input::-ms-input-placeholder {
+  color: #858585;
+}
+html body header .top .center .inputArea .inputBox input::placeholder {
+  color: #858585;
+}
+html body header .top .center .btnBox {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 15px;
+}
+html body header .top .center .btnBox button {
+  width: 80px;
+  height: 28px;
+  margin-right: 8px;
+}
+html body header .top .center .btnBox button:last-child {
+  margin: 0;
+}
+html body header .top .center .btnBox button:nth-of-type(1) {
+  background: -webkit-gradient(linear, right top, left top, from(#ff4d8c), to(#ff7caa));
+  background: linear-gradient(to left, #ff4d8c 0%, #ff7caa 100%);
+  border-radius: 30px;
+  border: solid 2px #ffffff;
+  color: #0b313b;
+  font-size: 12px;
+  font-weight: bold;
+}
+html body header .top .center .btnBox button:nth-of-type(1):hover, html body header .top .center .btnBox button:nth-of-type(1):active, html body header .top .center .btnBox button:nth-of-type(1).active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff934b), to(#f31d1d));
+  background: linear-gradient(to top, #ff934b 0%, #f31d1d 100%);
+  color: #ffffff;
+}
+html body header .top .center .btnBox button:nth-of-type(2) {
+  background: -webkit-gradient(linear, right top, left top, from(#00c3e6), to(#7ce8ff));
+  background: linear-gradient(to left, #00c3e6 0%, #7ce8ff 100%);
+  border-radius: 30px;
+  border: solid 2px #ffffff;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+}
+html body header .top .center .btnBox button:nth-of-type(2):hover, html body header .top .center .btnBox button:nth-of-type(2):active, html body header .top .center .btnBox button:nth-of-type(2).active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff6997), to(#ba18ad));
+  background: linear-gradient(to top, #ff6997 0%, #ba18ad 100%);
+  color: #ffffff;
+}
+html body header .top .center .btnBox button:last-child {
+  width: auto;
+  height: auto;
+  background: none;
+  border: none;
+  color: #4577aa;
+  font-size: 15px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body header .top .center .btnBox button:last-child i {
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+}
+html body header .top .center .selectBox {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+html body header .top .center .selectBox select {
+  width: auto;
+  height: 28px;
+  background: #ffbc2c;
+  border: solid 2px #ffffff;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 25px 0 10px;
+}
+html body header .top .center .selectBox select:hover, html body header .top .center .selectBox select:active, html body header .top .center .selectBox select.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffaa1a), to(#ff7200));
+  background: linear-gradient(to top, #ffaa1a 0%, #ff7200 100%);
+}
+html body header .top .center .selectBox select option {
+  background: #ffbc2c;
+}
+html body header .top .center .selectBox i {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 6px 0 6px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px;
+}
+html body header .bottom {
+  width: 100%;
+  height: 60px;
+  background: #ffaa1a;
+}
+html body header .bottom .center {
+  width: calc(100% - 360px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  margin: 0 auto;
+}
+html body header .bottom .center ul {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 140px;
+}
+html body header .bottom .center ul li {
+  width: auto;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+}
+html body header .bottom .center ul li::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  top: 0px;
+  right: 10px;
+  border-radius: 50%;
+  opacity: 0;
+}
+html body header .bottom .center ul li:hover::before, html body header .bottom .center ul li:active::before, html body header .bottom .center ul li.active::before {
+  -webkit-animation: waterDrop 0.5s linear 0s;
+          animation: waterDrop 0.5s linear 0s;
+}
+html body header .bottom .center ul li:hover div, html body header .bottom .center ul li:active div, html body header .bottom .center ul li.active div {
+  background: #24fffc;
+  border-color: #ffffff;
+  text-shadow: none;
+  -webkit-animation: hoverJump 0.25s linear 0s;
+          animation: hoverJump 0.25s linear 0s;
+}
+html body header .bottom .center ul li:hover div::before, html body header .bottom .center ul li:active div::before, html body header .bottom .center ul li.active div::before {
+  -webkit-animation: loop 10s linear 0s infinite;
+          animation: loop 10s linear 0s infinite;
+}
+html body header .bottom .center ul li div {
+  width: auto;
+  height: 45px;
+  border: solid 3px transparent;
+  border-radius: 30px;
+  color: #1e0a00;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: -1px 0 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, 0 1px 0 #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  overflow: hidden;
+  padding: 0 20px;
+}
+html body header .bottom .center ul li div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  opacity: 0;
+}
+html body header .bottom .center ul li div p {
+  position: relative;
+  z-index: 1;
+}
+@-webkit-keyframes waterDrop {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%) scale(1);
+            transform: translate(0%, 0%) scale(1);
+  }
+  34% {
+    -webkit-transform: translate(75%, -67%);
+            transform: translate(75%, -67%);
+  }
+  67% {
+    -webkit-transform: translate(150%, -34%);
+            transform: translate(150%, -34%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(200%, 0%) scale(0);
+            transform: translate(200%, 0%) scale(0);
+  }
+}
+@keyframes waterDrop {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%) scale(1);
+            transform: translate(0%, 0%) scale(1);
+  }
+  34% {
+    -webkit-transform: translate(75%, -67%);
+            transform: translate(75%, -67%);
+  }
+  67% {
+    -webkit-transform: translate(150%, -34%);
+            transform: translate(150%, -34%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(200%, 0%) scale(0);
+            transform: translate(200%, 0%) scale(0);
+  }
+}
+@-webkit-keyframes loop {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(-80%);
+            transform: translateX(-80%);
+  }
+}
+@keyframes loop {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(-80%);
+            transform: translateX(-80%);
+  }
+}
+@-webkit-keyframes hoverJump {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  34% {
+    -webkit-transform: scale(0.7, 1.2);
+            transform: scale(0.7, 1.2);
+  }
+  67% {
+    -webkit-transform: scale(1.2, 0.8);
+            transform: scale(1.2, 0.8);
+  }
+  90% {
+    -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes hoverJump {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  34% {
+    -webkit-transform: scale(0.7, 1.2);
+            transform: scale(0.7, 1.2);
+  }
+  67% {
+    -webkit-transform: scale(1.2, 0.8);
+            transform: scale(1.2, 0.8);
+  }
+  90% {
+    -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+html body header .underList {
+  width: 100%;
+  height: 0;
+  background: rgba(255, 255, 255, 0.7882352941);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  overflow: hidden;
+}
+html body header .underList.display {
+  height: 230px;
+}
+html body header .underList ul {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body header .underList ul li {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  margin-right: 70px;
+}
+html body header .underList ul li:last-child {
+  margin: 0;
+}
+html body header .underList ul li:hover .img, html body header .underList ul li:active .img, html body header .underList ul li.active .img {
+  -webkit-animation: underList 1.5s linear 0s infinite;
+          animation: underList 1.5s linear 0s infinite;
+}
+html body header .underList ul li:hover p, html body header .underList ul li:active p, html body header .underList ul li.active p {
+  -webkit-transform: translateY(10px) scale(1.2);
+          transform: translateY(10px) scale(1.2);
+}
+html body header .underList ul li .img {
+  width: 142px;
+  height: 135px;
+  margin-bottom: 20px;
+}
+html body header .underList ul li p {
+  color: #000e49;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+@-webkit-keyframes underList {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: scale(1.1) rotate(0deg);
+            transform: scale(1.1) rotate(0deg);
+  }
+  17.5% {
+    -webkit-transform: scale(1.1) rotate(15deg);
+            transform: scale(1.1) rotate(15deg);
+  }
+  25% {
+    -webkit-transform: scale(1.1) rotate(0deg);
+            transform: scale(1.1) rotate(0deg);
+  }
+  32.5% {
+    -webkit-transform: scale(1.1) rotate(-15deg);
+            transform: scale(1.1) rotate(-15deg);
+  }
+  40% {
+    -webkit-transform: scale(1.1) rotate(0deg);
+            transform: scale(1.1) rotate(0deg);
+  }
+  60% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+}
+@keyframes underList {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: scale(1.1) rotate(0deg);
+            transform: scale(1.1) rotate(0deg);
+  }
+  17.5% {
+    -webkit-transform: scale(1.1) rotate(15deg);
+            transform: scale(1.1) rotate(15deg);
+  }
+  25% {
+    -webkit-transform: scale(1.1) rotate(0deg);
+            transform: scale(1.1) rotate(0deg);
+  }
+  32.5% {
+    -webkit-transform: scale(1.1) rotate(-15deg);
+            transform: scale(1.1) rotate(-15deg);
+  }
+  40% {
+    -webkit-transform: scale(1.1) rotate(0deg);
+            transform: scale(1.1) rotate(0deg);
+  }
+  60% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+}
+@media only screen and (max-width: 1750px) {
+  html body header .bottom .center ul {
+    margin: 0;
+  }
+  html body header .bottom .center ul li div {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 1490px) {
+  html body header .bottom .center ul {
+    margin: 0;
+  }
+  html body header .bottom .center ul li div {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1240px) {
+  html body header .top .center {
+    width: calc(100% - 240px);
+  }
+  html body header .bottom .center {
+    width: calc(100% - 120px);
+  }
+}
+html body .mainArea {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+}
+html body .mainArea .swiper {
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+}
+html body .mainArea .swiper .swiper-slide {
+  height: auto !important;
+  font-size: 0;
+}
+html body .mainArea .swiper .swiper-slide img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html body .mainArea .center {
+  width: calc(100% - 360px);
+  height: auto;
+  margin: 15px auto 0;
+}
+html body .mainArea .center .marqueeBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+html body .mainArea .center .marqueeBox .marquee_ic {
+  width: auto;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+html body .mainArea .center .marqueeBox .marquee_ic i {
+  width: 89px;
+  height: 89px;
+  -webkit-animation: marquee_iconJump 2s linear 0s;
+          animation: marquee_iconJump 2s linear 0s;
+}
+html body .mainArea .center .marqueeBox .marquee_ic p {
+  width: 108px;
+  height: 35px;
+  background: #ffdf48;
+  border-radius: 30px;
+  color: #000000;
+  font-size: 23px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  -webkit-animation: marquee_textJump 2s linear 0s;
+          animation: marquee_textJump 2s linear 0s;
+}
+@-webkit-keyframes marquee_iconJump {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  15% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  35% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  55% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  65% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes marquee_iconJump {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  15% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  35% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  55% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  65% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes marquee_textJump {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes marquee_textJump {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+html body .mainArea .center .marqueeBox .marquee {
+  width: 100%;
+  height: 40px;
+  background: #ffed54;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 10px;
+  padding: 0 60px;
+  -webkit-animation: marquee_slide 2s linear 0s;
+          animation: marquee_slide 2s linear 0s;
+}
+html body .mainArea .center .marqueeBox .marquee .textArea {
+  width: 100%;
+  height: 30px;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+html body .mainArea .center .marqueeBox .marquee .textArea p {
+  color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  white-space: nowrap;
+  -webkit-animation: marquee 10s linear 0s infinite;
+          animation: marquee 10s linear 0s infinite;
+  padding-left: 100%;
+}
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes marquee_slide {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  15% {
+    opacity: 1;
+    width: 0;
+  }
+  20% {
+    width: 0;
+  }
+  80% {
+    width: 100%;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+@keyframes marquee_slide {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  15% {
+    opacity: 1;
+    width: 0;
+  }
+  20% {
+    width: 0;
+  }
+  80% {
+    width: 100%;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+html body .mainArea .center .gameBox {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+html body .mainArea .center .gameBox ul {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 92px 1fr 92px 1fr 92px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px 92px;
+}
+html body .mainArea .center .gameBox ul li {
+  width: auto;
+  height: 0;
+  position: relative;
+  cursor: pointer;
+  padding-top: 100%;
+}
+html body .mainArea .center .gameBox ul li:hover .sport.img_1, html body .mainArea .center .gameBox ul li:active .sport.img_1, html body .mainArea .center .gameBox ul li.active .sport.img_1 {
+  -webkit-animation: sport_1 0.3s linear 0s;
+          animation: sport_1 0.3s linear 0s;
+}
+html body .mainArea .center .gameBox ul li:hover .sport.img_2, html body .mainArea .center .gameBox ul li:active .sport.img_2, html body .mainArea .center .gameBox ul li.active .sport.img_2 {
+  -webkit-animation: sport_2 0.4s linear 0s, sport_hover 1.5s linear 1s infinite;
+          animation: sport_2 0.4s linear 0s, sport_hover 1.5s linear 1s infinite;
+}
+html body .mainArea .center .gameBox ul li:hover .live.img_1, html body .mainArea .center .gameBox ul li:active .live.img_1, html body .mainArea .center .gameBox ul li.active .live.img_1 {
+  -webkit-animation: live_1 0.3s linear 0s, live_hover 2s linear 1s infinite;
+          animation: live_1 0.3s linear 0s, live_hover 2s linear 1s infinite;
+}
+html body .mainArea .center .gameBox ul li:hover .live.img_2, html body .mainArea .center .gameBox ul li:active .live.img_2, html body .mainArea .center .gameBox ul li.active .live.img_2 {
+  -webkit-animation: live_2 0.3s linear 0s, live_hover 2s linear 1s infinite;
+          animation: live_2 0.3s linear 0s, live_hover 2s linear 1s infinite;
+}
+html body .mainArea .center .gameBox ul li:hover .live.img_3, html body .mainArea .center .gameBox ul li:active .live.img_3, html body .mainArea .center .gameBox ul li.active .live.img_3 {
+  -webkit-animation: live_3 0.5s linear 0s;
+          animation: live_3 0.5s linear 0s;
+}
+html body .mainArea .center .gameBox ul li:hover .live.img_3_2, html body .mainArea .center .gameBox ul li:active .live.img_3_2, html body .mainArea .center .gameBox ul li.active .live.img_3_2 {
+  -webkit-animation: live_3_2 0.7s linear 0s;
+          animation: live_3_2 0.7s linear 0s;
+}
+html body .mainArea .center .gameBox ul li:hover .slot.img_1, html body .mainArea .center .gameBox ul li:active .slot.img_1, html body .mainArea .center .gameBox ul li.active .slot.img_1 {
+  -webkit-animation: slot_1 0.3s linear 0s;
+          animation: slot_1 0.3s linear 0s;
+}
+html body .mainArea .center .gameBox ul li:hover .slot.img_2, html body .mainArea .center .gameBox ul li:active .slot.img_2, html body .mainArea .center .gameBox ul li.active .slot.img_2 {
+  -webkit-animation: slot_2 0.5s ease-out 0s;
+          animation: slot_2 0.5s ease-out 0s;
+}
+html body .mainArea .center .gameBox ul li:hover .slot.img_3, html body .mainArea .center .gameBox ul li:active .slot.img_3, html body .mainArea .center .gameBox ul li.active .slot.img_3 {
+  -webkit-animation: slot_3 0.6s linear 0s, slot_hover 1.2s linear 1s infinite;
+          animation: slot_3 0.6s linear 0s, slot_hover 1.2s linear 1s infinite;
+}
+html body .mainArea .center .gameBox ul li:hover .fish.img_1, html body .mainArea .center .gameBox ul li:active .fish.img_1, html body .mainArea .center .gameBox ul li.active .fish.img_1 {
+  -webkit-animation: fish_1 0.3s linear 0s, fish_hover 1.5s linear 1s infinite;
+          animation: fish_1 0.3s linear 0s, fish_hover 1.5s linear 1s infinite;
+}
+html body .mainArea .center .gameBox ul li:hover .lottery.img_1, html body .mainArea .center .gameBox ul li:active .lottery.img_1, html body .mainArea .center .gameBox ul li.active .lottery.img_1 {
+  -webkit-animation: lottery_1 0.45s ease-out 0s, lottery_hover 1.5s linear 1s infinite;
+          animation: lottery_1 0.45s ease-out 0s, lottery_hover 1.5s linear 1s infinite;
+}
+html body .mainArea .center .gameBox ul li:hover .lottery.img_2, html body .mainArea .center .gameBox ul li:active .lottery.img_2, html body .mainArea .center .gameBox ul li.active .lottery.img_2 {
+  -webkit-animation: lottery_2 0.25s ease-out 0s;
+          animation: lottery_2 0.25s ease-out 0s;
+}
+html body .mainArea .center .gameBox ul li:hover .board.img_1, html body .mainArea .center .gameBox ul li:active .board.img_1, html body .mainArea .center .gameBox ul li.active .board.img_1 {
+  -webkit-animation: board_1 0.45s linear 0s;
+          animation: board_1 0.45s linear 0s;
+}
+html body .mainArea .center .gameBox ul li:hover .board.img_2, html body .mainArea .center .gameBox ul li:active .board.img_2, html body .mainArea .center .gameBox ul li.active .board.img_2 {
+  -webkit-animation: board_2 0.3s linear 0s, board_hover 1.2s linear 1s infinite;
+          animation: board_2 0.3s linear 0s, board_hover 1.2s linear 1s infinite;
+}
+html body .mainArea .center .gameBox ul li:hover .board.img_3, html body .mainArea .center .gameBox ul li:active .board.img_3, html body .mainArea .center .gameBox ul li.active .board.img_3 {
+  -webkit-animation: board_3 0.6s linear 0s, board_hover 1.2s linear 1.5s infinite;
+          animation: board_3 0.6s linear 0s, board_hover 1.2s linear 1.5s infinite;
+}
+html body .mainArea .center .gameBox ul li .img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+html body .mainArea .center .gameBox ul li .img .sport.img_1 {
+  width: 78%;
+  height: 0;
+  position: absolute;
+  top: -7%;
+  right: -10%;
+  padding-top: 85%;
+}
+html body .mainArea .center .gameBox ul li .img .sport.img_2 {
+  width: 30%;
+  height: 0;
+  position: absolute;
+  top: 24%;
+  left: 8%;
+  padding-top: 30%;
+}
+@-webkit-keyframes sport_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  85% {
+    opacity: 1;
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes sport_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  85% {
+    opacity: 1;
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes sport_2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 50%) scale(0);
+            transform: translate(-50%, 50%) scale(0);
+  }
+  40% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 50%) scale(0);
+            transform: translate(-50%, 50%) scale(0);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: translate(10%, 10%) scale(0.8, 1.2);
+            transform: translate(10%, 10%) scale(0.8, 1.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%) scale(1);
+            transform: translate(0%, 0%) scale(1);
+  }
+}
+@keyframes sport_2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 50%) scale(0);
+            transform: translate(-50%, 50%) scale(0);
+  }
+  40% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 50%) scale(0);
+            transform: translate(-50%, 50%) scale(0);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: translate(10%, 10%) scale(0.8, 1.2);
+            transform: translate(10%, 10%) scale(0.8, 1.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%) scale(1);
+            transform: translate(0%, 0%) scale(1);
+  }
+}
+@-webkit-keyframes sport_hover {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  15% {
+    -webkit-transform: scale(1.2, 0.7);
+            transform: scale(1.2, 0.7);
+  }
+  30% {
+    -webkit-transform: scale(0.8, 1.3);
+            transform: scale(0.8, 1.3);
+  }
+  45% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes sport_hover {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  15% {
+    -webkit-transform: scale(1.2, 0.7);
+            transform: scale(1.2, 0.7);
+  }
+  30% {
+    -webkit-transform: scale(0.8, 1.3);
+            transform: scale(0.8, 1.3);
+  }
+  45% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+html body .mainArea .center .gameBox ul li .img .live.img_1 {
+  width: 88%;
+  height: 0;
+  position: absolute;
+  top: -12%;
+  right: 7%;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  padding-top: 93%;
+  z-index: 1;
+}
+html body .mainArea .center .gameBox ul li .img .live.img_2 {
+  width: 74.6%;
+  height: 0;
+  position: absolute;
+  top: -10%;
+  right: 14%;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  padding-top: 84.7%;
+  z-index: 1;
+}
+html body .mainArea .center .gameBox ul li .img .live.img_3 {
+  width: 29.1%;
+  height: 0;
+  position: absolute;
+  top: 24%;
+  left: 5%;
+  padding-top: 28%;
+}
+html body .mainArea .center .gameBox ul li .img .live.img_3_2 {
+  width: 29.1%;
+  height: 0;
+  position: absolute;
+  top: 42%;
+  right: 5%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  padding-top: 28%;
+}
+@-webkit-keyframes live_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(0.8, 1.2);
+            transform: scale(0.8, 1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes live_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(0.8, 1.2);
+            transform: scale(0.8, 1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes live_2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(0.8, 1.2);
+            transform: scale(0.8, 1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes live_2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(0.8, 1.2);
+            transform: scale(0.8, 1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes live_3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  75% {
+    opacity: 1;
+    -webkit-transform: scale(1.5, 0.5);
+            transform: scale(1.5, 0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes live_3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  75% {
+    opacity: 1;
+    -webkit-transform: scale(1.5, 0.5);
+            transform: scale(1.5, 0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes live_3_2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0) rotate(-45deg);
+            transform: scale(0) rotate(-45deg);
+  }
+  70% {
+    opacity: 0;
+    -webkit-transform: scale(0) rotate(-45deg);
+            transform: scale(0) rotate(-45deg);
+  }
+  85% {
+    opacity: 1;
+    -webkit-transform: scale(0.5, 1.5) rotate(-45deg);
+            transform: scale(0.5, 1.5) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(-45deg);
+            transform: scale(1) rotate(-45deg);
+  }
+}
+@keyframes live_3_2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0) rotate(-45deg);
+            transform: scale(0) rotate(-45deg);
+  }
+  70% {
+    opacity: 0;
+    -webkit-transform: scale(0) rotate(-45deg);
+            transform: scale(0) rotate(-45deg);
+  }
+  85% {
+    opacity: 1;
+    -webkit-transform: scale(0.5, 1.5) rotate(-45deg);
+            transform: scale(0.5, 1.5) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(-45deg);
+            transform: scale(1) rotate(-45deg);
+  }
+}
+@-webkit-keyframes live_hover {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  20% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes live_hover {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  20% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+html body .mainArea .center .gameBox ul li .img .slot.img_1 {
+  width: 55%;
+  height: 0;
+  position: absolute;
+  top: -11%;
+  right: 22%;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  padding-top: 81.2%;
+  z-index: 1;
+}
+html body .mainArea .center .gameBox ul li .img .slot.img_2 {
+  width: 113.4%;
+  height: 0;
+  position: absolute;
+  top: -12%;
+  right: -11%;
+  padding-top: 92.2%;
+  z-index: 1;
+}
+html body .mainArea .center .gameBox ul li .img .slot.img_3 {
+  width: 87.5%;
+  height: 0;
+  position: absolute;
+  top: 23%;
+  right: 7%;
+  padding-top: 47.4%;
+}
+@-webkit-keyframes slot_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes slot_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes slot_2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slot_2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes slot_3 {
+  0% {
+    -webkit-transform: scale(0) rotate(0deg);
+            transform: scale(0) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: scale(1.35) rotate(180deg);
+            transform: scale(1.35) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
+  }
+}
+@keyframes slot_3 {
+  0% {
+    -webkit-transform: scale(0) rotate(0deg);
+            transform: scale(0) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: scale(1.35) rotate(180deg);
+            transform: scale(1.35) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
+  }
+}
+@-webkit-keyframes slot_hover {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  15% {
+    -webkit-transform: scale(1.2, 0.7);
+            transform: scale(1.2, 0.7);
+  }
+  30% {
+    -webkit-transform: scale(0.8, 1.3);
+            transform: scale(0.8, 1.3);
+  }
+  45% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes slot_hover {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  15% {
+    -webkit-transform: scale(1.2, 0.7);
+            transform: scale(1.2, 0.7);
+  }
+  30% {
+    -webkit-transform: scale(0.8, 1.3);
+            transform: scale(0.8, 1.3);
+  }
+  45% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+html body .mainArea .center .gameBox ul li .img .fish.img_1 {
+  width: 95.7%;
+  height: 0;
+  position: absolute;
+  top: -3%;
+  right: 2%;
+  padding-top: 95.1%;
+}
+@-webkit-keyframes fish_1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes fish_1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes fish_hover {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  20% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fish_hover {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  20% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+html body .mainArea .center .gameBox ul li .img .lottery.img_1 {
+  width: 130%;
+  height: 0;
+  position: absolute;
+  top: -6%;
+  right: -18%;
+  padding-top: 83.4%;
+  z-index: 1;
+}
+html body .mainArea .center .gameBox ul li .img .lottery.img_2 {
+  width: 94.1%;
+  height: 0;
+  position: absolute;
+  top: 25%;
+  right: 2%;
+  padding-top: 49.3%;
+}
+@-webkit-keyframes lottery_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(15%, -15%) scale(0.8);
+            transform: translate(15%, -15%) scale(0.8);
+  }
+  30% {
+    opacity: 0;
+    -webkit-transform: translate(15%, -15%) scale(0.8);
+            transform: translate(15%, -15%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%) scale(1);
+            transform: translate(0%, 0%) scale(1);
+  }
+}
+@keyframes lottery_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(15%, -15%) scale(0.8);
+            transform: translate(15%, -15%) scale(0.8);
+  }
+  30% {
+    opacity: 0;
+    -webkit-transform: translate(15%, -15%) scale(0.8);
+            transform: translate(15%, -15%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%) scale(1);
+            transform: translate(0%, 0%) scale(1);
+  }
+}
+@-webkit-keyframes lottery_2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10%) scale(0.5);
+            transform: translateY(-10%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+  }
+}
+@keyframes lottery_2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10%) scale(0.5);
+            transform: translateY(-10%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+  }
+}
+@-webkit-keyframes lottery_hover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  15% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  25% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes lottery_hover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  15% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  25% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+html body .mainArea .center .gameBox ul li .img .board.img_1 {
+  width: 86.2%;
+  height: 0;
+  position: absolute;
+  bottom: 25%;
+  right: 7%;
+  padding-top: 84.7%;
+  z-index: 1;
+}
+html body .mainArea .center .gameBox ul li .img .board.img_2 {
+  width: 50%;
+  height: 0;
+  position: absolute;
+  top: 27%;
+  left: -1%;
+  padding-top: 42%;
+}
+html body .mainArea .center .gameBox ul li .img .board.img_3 {
+  width: 55.6%;
+  height: 0;
+  position: absolute;
+  top: 15%;
+  right: -2%;
+  padding-top: 57.2%;
+}
+@-webkit-keyframes board_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(0.1);
+            transform: scaleX(0.1);
+    padding-top: 10%;
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: scaleX(0.1);
+            transform: scaleX(0.1);
+    padding-top: 10%;
+  }
+  50% {
+    -webkit-transform: scaleX(0.1);
+            transform: scaleX(0.1);
+    padding-top: 84.7%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    padding-top: 84.7%;
+  }
+}
+@keyframes board_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(0.1);
+            transform: scaleX(0.1);
+    padding-top: 10%;
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: scaleX(0.1);
+            transform: scaleX(0.1);
+    padding-top: 10%;
+  }
+  50% {
+    -webkit-transform: scaleX(0.1);
+            transform: scaleX(0.1);
+    padding-top: 84.7%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    padding-top: 84.7%;
+  }
+}
+@-webkit-keyframes board_2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%) scale(0) rotate(0deg);
+            transform: translate(-50%, -50%) scale(0) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0) scale(1) rotate(360deg);
+            transform: translate(0, 0) scale(1) rotate(360deg);
+  }
+}
+@keyframes board_2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%) scale(0) rotate(0deg);
+            transform: translate(-50%, -50%) scale(0) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0) scale(1) rotate(360deg);
+            transform: translate(0, 0) scale(1) rotate(360deg);
+  }
+}
+@-webkit-keyframes board_3 {
+  0% {
+    -webkit-transform: translate(30%, -50%) scale(0) rotate(-360deg);
+            transform: translate(30%, -50%) scale(0) rotate(-360deg);
+  }
+  60% {
+    -webkit-transform: translate(0, 0) scale(1) rotate(15deg);
+            transform: translate(0, 0) scale(1) rotate(15deg);
+  }
+  100% {
+    -webkit-transform: translate(0, 0) scale(1) rotate(0deg);
+            transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+}
+@keyframes board_3 {
+  0% {
+    -webkit-transform: translate(30%, -50%) scale(0) rotate(-360deg);
+            transform: translate(30%, -50%) scale(0) rotate(-360deg);
+  }
+  60% {
+    -webkit-transform: translate(0, 0) scale(1) rotate(15deg);
+            transform: translate(0, 0) scale(1) rotate(15deg);
+  }
+  100% {
+    -webkit-transform: translate(0, 0) scale(1) rotate(0deg);
+            transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+}
+@-webkit-keyframes board_hover {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  15% {
+    -webkit-transform: scale(1.2, 0.7);
+            transform: scale(1.2, 0.7);
+  }
+  30% {
+    -webkit-transform: scale(0.8, 1.3);
+            transform: scale(0.8, 1.3);
+  }
+  45% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes board_hover {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  15% {
+    -webkit-transform: scale(1.2, 0.7);
+            transform: scale(1.2, 0.7);
+  }
+  30% {
+    -webkit-transform: scale(0.8, 1.3);
+            transform: scale(0.8, 1.3);
+  }
+  45% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+html body .mainArea .center .gameBox ul li .textBox {
+  width: 117.2%;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 10%;
+  padding-top: 31.6%;
+  z-index: 10;
+}
+html body .mainArea .center .gameBox ul li .textBox p {
+  color: #ffffff;
+  font-size: 1.4vw;
+  font-weight: bold;
+  text-shadow: -2px 0 0 #00c6d2, 2px 0 0 #00c6d2, 0 -2px 0 #00c6d2, 0 2px 0 #00c6d2;
+  position: absolute;
+  left: 50%;
+  top: 58%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 1560px) {
+  html body .mainArea .center .gameBox ul {
+    -ms-grid-columns: 1fr 120px 1fr 120px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px 120px;
+  }
+}
+@media only screen and (max-width: 1260px) {
+  html body .mainArea .center .gameBox ul {
+    -ms-grid-columns: 1fr 60px 1fr 60px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 60px;
+  }
+  html body .mainArea .center .gameBox ul li .textBox p {
+    text-shadow: none;
+  }
+}
+html body footer {
+  width: 100%;
+  height: auto;
+}
+html body footer .top {
+  width: 100%;
+  height: 50px;
+  background: #ffdf48;
+}
+html body footer .top .center {
+  width: calc(100% - 360px);
+  height: 100%;
+  margin: 0 auto;
+}
+html body footer .top .center ul {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body footer .top .center ul li {
+  width: auto;
+  height: 45px;
+  border: solid 3px transparent;
+  border-radius: 30px;
+  color: #1e0a00;
+  font-size: 16px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  padding: 0 20px;
+}
+html body footer .top .center ul li:hover, html body footer .top .center ul li:active, html body footer .top .center ul li.active {
+  background: #fca31a;
+  border-color: #ffffff;
+}
+html body footer .top .center ul li:hover::before, html body footer .top .center ul li:active::before, html body footer .top .center ul li.active::before {
+  -webkit-animation: loop 10s linear 0s infinite;
+          animation: loop 10s linear 0s infinite;
+}
+html body footer .top .center ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  opacity: 0;
+}
+@keyframes loop {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(-80%);
+            transform: translateX(-80%);
+  }
+}
+html body footer .top .center ul li p {
+  position: relative;
+  z-index: 1;
+}
+html body footer .bottom {
+  width: 100%;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body footer .bottom p {
+  color: #421a04;
+  font-size: 13px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 1400px) {
+  html body footer .top .center {
+    width: calc(100% - 120px);
+  }
+  html body footer .top .center ul li {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+}
+html body aside {
+  width: 100%;
+  height: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+html body aside .leftSide {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+html body aside .leftSide .download {
+  width: 85px;
+  height: 85px;
+  background: #00fffc;
+  border-radius: 50%;
+  border: solid 5px #ffed54;
+  position: absolute;
+  top: 300px;
+  left: 20px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+html body aside .leftSide .download:hover .icon, html body aside .leftSide .download:active .icon, html body aside .leftSide .download.active .icon {
+  -webkit-transform: translate(-50%, -10px) rotate(-15deg);
+          transform: translate(-50%, -10px) rotate(-15deg);
+  -webkit-animation: iconJump 0.45s linear 0s;
+          animation: iconJump 0.45s linear 0s;
+}
+html body aside .leftSide .download:hover .word, html body aside .leftSide .download:active .word, html body aside .leftSide .download.active .word {
+  -webkit-transform: translate(-50%, -10px);
+          transform: translate(-50%, -10px);
+}
+@-webkit-keyframes iconJump {
+  0% {
+    -webkit-transform: translate(-50%, 0) rotate(0deg);
+            transform: translate(-50%, 0) rotate(0deg);
+  }
+  67% {
+    -webkit-transform: translate(-50%, -30px) rotate(270deg);
+            transform: translate(-50%, -30px) rotate(270deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -10px) rotate(345deg);
+            transform: translate(-50%, -10px) rotate(345deg);
+  }
+}
+@keyframes iconJump {
+  0% {
+    -webkit-transform: translate(-50%, 0) rotate(0deg);
+            transform: translate(-50%, 0) rotate(0deg);
+  }
+  67% {
+    -webkit-transform: translate(-50%, -30px) rotate(270deg);
+            transform: translate(-50%, -30px) rotate(270deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -10px) rotate(345deg);
+            transform: translate(-50%, -10px) rotate(345deg);
+  }
+}
+html body aside .leftSide .download .icon {
+  width: 83%;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  top: -43%;
+  padding-top: 123%;
+}
+html body aside .leftSide .download .word {
+  width: 159%;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -5%;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  z-index: 1;
+  padding-top: 58%;
+}
+html body aside .rightSide {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+html body aside .rightSide div {
+  width: 85px;
+  height: 85px;
+  background: #00fffc;
+  border-radius: 50%;
+  border: solid 5px #ffed54;
+  position: absolute;
+  right: 30px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+html body aside .rightSide div:hover .icon, html body aside .rightSide div:active .icon, html body aside .rightSide div.active .icon {
+  -webkit-transform: translate(-50%, -10px) rotate(-15deg);
+          transform: translate(-50%, -10px) rotate(-15deg);
+  -webkit-animation: iconJump 0.45s linear 0s;
+          animation: iconJump 0.45s linear 0s;
+}
+html body aside .rightSide div:hover .word, html body aside .rightSide div:active .word, html body aside .rightSide div.active .word {
+  -webkit-transform: translate(-50%, -10px);
+          transform: translate(-50%, -10px);
+}
+@keyframes iconJump {
+  0% {
+    -webkit-transform: translate(-50%, 0) rotate(0deg);
+            transform: translate(-50%, 0) rotate(0deg);
+  }
+  67% {
+    -webkit-transform: translate(-50%, -30px) rotate(270deg);
+            transform: translate(-50%, -30px) rotate(270deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -10px) rotate(345deg);
+            transform: translate(-50%, -10px) rotate(345deg);
+  }
+}
+html body aside .rightSide div.service {
+  top: 300px;
+}
+html body aside .rightSide div.service .icon {
+  width: 100%;
+  height: 0;
+  top: -43%;
+  padding-top: 119%;
+}
+html body aside .rightSide div.service .word {
+  width: 180%;
+  height: 0;
+  bottom: -5%;
+  z-index: 1;
+  padding-top: 58%;
+}
+html body aside .rightSide div.line {
+  top: 400px;
+}
+html body aside .rightSide div.line .icon {
+  width: 110%;
+  height: 0;
+  top: 0;
+  padding-top: 102%;
+}
+html body aside .rightSide div.line .word {
+  width: 72%;
+  height: 0;
+  bottom: -5%;
+  z-index: 1;
+  padding-top: 27%;
+}
+html body aside .rightSide div.wechat {
+  top: 500px;
+}
+html body aside .rightSide div.wechat .icon {
+  width: 114%;
+  height: 0;
+  top: 0;
+  padding-top: 100%;
+}
+html body aside .rightSide div.wechat .word {
+  width: 119%;
+  height: 0;
+  bottom: -5%;
+  z-index: 1;
+  padding-top: 27%;
+}
+html body aside .rightSide div.goTop {
+  width: 60px;
+  height: 60px;
+  background: #ff8585;
+  border-radius: 50%;
+  border: solid 5px #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 850px;
+  right: 10px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  opacity: 0;
+  pointer-events: none;
+}
+html body aside .rightSide div.goTop:hover, html body aside .rightSide div.goTop:active, html body aside .rightSide div.goTop.active {
+  background: #f02a2a;
+}
+html body aside .rightSide div.goTop span {
+  display: block;
+}
+html body aside .rightSide div.goTop span:nth-of-type(1) {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 12px 16px 12px;
+  border-color: #ffffff transparent;
+}
+html body aside .rightSide div.goTop span:nth-of-type(2) {
+  width: 24px;
+  height: 5px;
+  background: #ffffff;
+  margin-top: 5px;
+}
+html body aside .rightSide div i {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+@media only screen and (max-width: 1490px) {
+  html body aside .leftSide .download {
+    width: 60px;
+    height: 60px;
+  }
+  html body aside .rightSide div {
+    width: 60px;
+    height: 60px;
+  }
+}
+html body .bg {
+  width: 100%;
+  min-width: 1000px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
